@@ -112,11 +112,8 @@ class Proxy:
             tpinfo.append(s)
         tpinfo = ', '.join(tpinfo)
         return '{host}:{port}'.format(
-            code=self._geo.code,
-            types=tpinfo,
             host=self.host,
             port=self.port,
-            avg=self.avg_resp_time,
         )
 
     @property
